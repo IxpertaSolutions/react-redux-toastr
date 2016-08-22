@@ -24,7 +24,7 @@ declare namespace ReactReduxToastr {
 
     export function reducer() : Reducer;
 
-    expoert interface BasicMsgOption {
+    export interface BasicMsgOption {
         icon: any
         timeOut: number,
         onShowComplete: any,
