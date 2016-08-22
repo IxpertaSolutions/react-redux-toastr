@@ -3,6 +3,7 @@ import { Reducer } from "redux";
 import React = __React;
 
 declare namespace ReactReduxToastr {
+
     export interface ConfirmOptions {
         confirtmTransitionIn: string,
         confirtmTransitionOut: string,
@@ -19,24 +20,22 @@ declare namespace ReactReduxToastr {
         confirmOptions: ConfirmOptions
     }
 
-    export class ReduxToastr extends React.Component<any, ToastrProps> {
-    }
+    export class ReduxToastr extends React.Component<any, ToastrProps> { }
 
     export function reducer() : Reducer;
 
     expoert interface BasicMsgOption {
-    icon: any
-        timeOut?: number,
-        onShowComplete?: any,
+        icon: any
+        timeOut: number,
+        onShowComplete: any,
         onHideComplete: any,
         component: any,
-        removeOnClick?: boolean,
-        removeOnHover?: boolean,
+        removeOnClick: boolean,
+        removeOnHover: boolean,
         /// 'top-right', 'top-left', 'bottom-right', ...
         position: string,
         newestOnTop: boolean,
         timeOut: number
-
     }
 
     export class Toastr = {
