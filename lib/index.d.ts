@@ -17,7 +17,7 @@ declare namespace ReactReduxToastr {
 
     export function reducer() : Reducer;
 
-    export class Toastr = {
+    export class Toastr {
         function error(title: string, msg: string, options?: any);
         function info(title: string, msg: string, options?: any);
         function message (title: string, msg: string, options?: any);
