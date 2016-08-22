@@ -1,5 +1,4 @@
 import { Reducer } from "redux";
-import "react-redux-toastr"
 
 declare namespace Toastr {
     import React = __React;
@@ -19,6 +18,4 @@ declare namespace Toastr {
     export function reducer() : Reducer;
 }
 
-declare module "react-redux-toastr" {
-    export = Toastr;
-}
+export default Toastr;
