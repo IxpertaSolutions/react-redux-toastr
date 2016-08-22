@@ -18,14 +18,14 @@ declare namespace ReactReduxToastr {
     export function reducer() : Reducer;
 
     export class Toastr {
-        function error(title: string, msg: string, options?: any);
-        function info(title: string, msg: string, options?: any);
-        function message (title: string, msg: string, options?: any);
-        function success(title: string, msg: string, options?: any);
-        function warning(title: string, msg: string, options?: any);
-        function confirm(mag: string, oprions?: any);
+        error(title: string, msg: string, options?: any): void;
+        info(title: string, msg: string, options?: any): void;
+        message (title: string, msg: string, options?: any): void;
+        success(title: string, msg: string, options?: any): void;
+        warning(title: string, msg: string, options?: any): void;
+        confirm(mag: string, oprions?: any): void;
 
-        function clean();
+        clean(): void;
     }
 }
 
