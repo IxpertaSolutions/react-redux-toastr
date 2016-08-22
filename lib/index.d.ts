@@ -1,3 +1,5 @@
+import "react-redux-toastr"
+
 declare namespace react-redux-toastr {
     import React = __React;
 
