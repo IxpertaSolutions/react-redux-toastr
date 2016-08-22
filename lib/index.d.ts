@@ -12,7 +12,7 @@ declare namespace ReactReduxToastr {
         confirmOptions: any
     }
 
-    export class ReduxToastr extends React.Component<ToastrProps, any> {
+    export class ReduxToastr extends React.Component<any, ToastrProps> {
     }
 
     export function reducer() : Reducer;
