@@ -1,6 +1,7 @@
+import { Reducer } from "redux";
 import "react-redux-toastr"
 
-declare namespace react-redux-toastr {
+declare namespace Toastr {
     import React = __React;
 
     export interface ToastrProps {
@@ -18,4 +19,6 @@ declare namespace react-redux-toastr {
     export function reducer() : Reducer;
 }
 
-export = react-redux-toastr;
+declare module "react-redux-toastr" {
+    export = Toastr;
+}
