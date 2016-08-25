@@ -2,7 +2,7 @@ import { Reducer } from "redux";
 
 import React = __React;
 
-declare namespace ReactReduxToastr {
+declare module "react-bootstrap-table" {
 
     export interface ToastrProps {
         toastr: any
@@ -13,7 +13,7 @@ declare namespace ReactReduxToastr {
         confirmOptions: any
     }
 
-    export class ReduxToastr extends React.Component<any, ToastrProps> { }
+    export interface ReduxToastr extends React.Component<any, ToastrProps> { }
 
     export function reducer() : Reducer;
 
@@ -28,5 +28,3 @@ declare namespace ReactReduxToastr {
         clean(): void;
     }
 }
-
-export = ReactReduxToastr;
